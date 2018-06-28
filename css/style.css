@@ -80,12 +80,12 @@ letter-spacing: 1.5px;
 
 .employeeState {
   margin: 0;
-  padding: 3px 10px 7px;
+  padding: 3px 10px 15px;
 }
 
 .employeePhone {
   margin: 0;
-  padding: 7px 10px 3px;
+  padding: 15px 10px 3px;
 }
 
 hr {

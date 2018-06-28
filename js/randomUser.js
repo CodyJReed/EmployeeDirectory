@@ -88,7 +88,7 @@
         employeeModal += '<a class="employeeEmail" href=""> ' + target.email +' </a>';
         employeeModal += '<p class="employeeState">' + target.location.city +'</p>';
         employeeModal += '<hr>';
-        employeeModal += '<p class="employeePhone">' + target.phone + '</p>';
+        employeeModal += '<p class="employeePhone">' + target.cell + '</p>';
         employeeModal += '<p class="employeeAddress">' + target.location.street + ',' + ' ' + '<span class="state">' + target.location.state + '</span>' + ' ' + target.location.postcode + '</p>';
         employeeModal += '<p class="employeeDOB">Birthday:' + ' ' + dob +'</p>';
 
