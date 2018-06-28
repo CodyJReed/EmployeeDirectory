@@ -44,6 +44,35 @@
         });
       }
 
+      // search users
+      let users = $('#dataResults .employeeName');
+      $("#search").keyup(function() {
+        const $input = $(this).val().toLowerCase();
+        $.each(users, function(index, user) {
+          if (user.innerHTML.toLowerCase().includes($input)) {
+            $(this).closest('.employee').show();
+          } else {
+            $(this).closest('.employee').hide();
+          }
+        });
+      });
+
+      // Search functionality //
+    $('#search').keyup(function () {
+
+      let searchImages = $('#search').val();
+      searchImages = searchImages.toLowerCase();
+
+      let profiles = $('#directory .employee');
+      for (i = 0; i < profiles.length; i++) {
+        if (profiles[i].innerHTML.toLowerCase().includes(searchImages)) {
+          profiles[i].style.display = 'flex';
+        } else {
+          profiles[i].style.display = 'none';
+        }
+      }
+    })
+
       // Define modalFill function
       function modalFill(target, index) {
         // Define content variable for modal fill

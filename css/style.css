@@ -11,6 +11,10 @@ font-family: sans-serif;
 letter-spacing: 1.5px;
 }
 
+#search {
+  margin: 0 10px;
+}
+
 #directory {
   display: flex;
   flex-direction: row;
